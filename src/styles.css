@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+
+.avatarFrameofline{
+    background: rgb(34,193,195);
+    background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(163,164,166,1) 0%, rgba(173,173,176,1) 32%, rgba(162,162,166,1) 61%, rgba(180,197,208,1) 77%, rgba(155,161,153,1) 87%, rgba(235,243,244,1) 94%, rgba(253,187,45,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(163,164,166,1) 0%, rgba(173,173,176,1) 32%, rgba(162,162,166,1) 61%, rgba(180,197,208,1) 77%, rgba(155,161,153,1) 87%, rgba(235,243,244,1) 94%, rgba(253,187,45,1) 100%);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(163,164,166,1) 0%, rgba(173,173,176,1) 32%, rgba(162,162,166,1) 61%, rgba(180,197,208,1) 77%, rgba(155,161,153,1) 87%, rgba(235,243,244,1) 94%, rgba(253,187,45,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1);
+    text-align: center;
+    padding: 5%;
+    border-radius: 10px;
+    border: 1px solid white;
+    display: inline-block;
+}
+
+.avatarFrameonline{
+    background: rgb(34,193,195);
+    background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(236,238,244,1) 0%, rgba(208,208,247,1) 32%, rgba(151,151,238,1) 61%, rgba(80,176,238,1) 77%, rgba(57,82,237,1) 87%, rgba(19,68,240,1) 94%, rgba(4,17,244,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(236,238,244,1) 0%, rgba(208,208,247,1) 32%, rgba(151,151,238,1) 61%, rgba(80,176,238,1) 77%, rgba(57,82,237,1) 87%, rgba(19,68,240,1) 94%, rgba(4,17,244,1) 100%);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(236,238,244,1) 0%, rgba(208,208,247,1) 32%, rgba(151,151,238,1) 61%, rgba(80,176,238,1) 77%, rgba(57,82,237,1) 87%, rgba(19,68,240,1) 94%, rgba(4,17,244,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#0411f4",GradientType=1);
+    text-align: center;
+    padding: 5%;
+    border-radius: 10px;
+    border: 1px solid white;
+    display: inline-block;
+}
+
+.generalContent{
+    margin-top: 56px;
+    
+}
+
+.center{
+    text-align: center !important;
+}
+
+.marto15{
+    margin-top: 15px;
+}
+
+.marbo15{
+    margin-bottom: 15px;
+}
+
+.marbo5{
+    margin-bottom: 5px;
+}
+
+.disblo{
+    display: block;
+}
+
+.pato45{
+    padding-top: 45px;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.custom-file-upload{
+    background: rgb(34,193,195);
+    background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(210,213,221,1) 0%, rgba(208,208,247,1) 32%, rgba(151,151,238,1) 61%, rgba(80,176,238,1) 77%, rgba(108,128,247,1) 87%, rgba(113,141,231,1) 94%, rgba(191,192,230,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(210,213,221,1) 0%, rgba(208,208,247,1) 32%, rgba(151,151,238,1) 61%, rgba(80,176,238,1) 77%, rgba(108,128,247,1) 87%, rgba(113,141,231,1) 94%, rgba(191,192,230,1) 100%);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(210,213,221,1) 0%, rgba(208,208,247,1) 32%, rgba(151,151,238,1) 61%, rgba(80,176,238,1) 77%, rgba(108,128,247,1) 87%, rgba(113,141,231,1) 94%, rgba(191,192,230,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#bfc0e6",GradientType=1);
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid #f2f2f2;
+}

@@ -1,0 +1,31 @@
+#main-logo{
+    width: 40px;
+}
+
+#menuContainer{
+    background: rgb(34,193,195);
+    background: -moz-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(210,213,221,1) 0%, rgba(208,208,247,1) 32%, rgba(151,151,238,1) 61%, rgba(80,176,238,1) 77%, rgba(108,128,247,1) 87%, rgba(113,141,231,1) 94%, rgba(191,192,230,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(210,213,221,1) 0%, rgba(208,208,247,1) 32%, rgba(151,151,238,1) 61%, rgba(80,176,238,1) 77%, rgba(108,128,247,1) 87%, rgba(113,141,231,1) 94%, rgba(191,192,230,1) 100%);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(210,213,221,1) 0%, rgba(208,208,247,1) 32%, rgba(151,151,238,1) 61%, rgba(80,176,238,1) 77%, rgba(108,128,247,1) 87%, rgba(113,141,231,1) 94%, rgba(191,192,230,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#bfc0e6",GradientType=1);
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    height: 56px;
+    top: 0px;
+    border-top: 1 px solid white;
+}
+
+.branding{
+    padding: 5px !important;
+    border-top: none !important;
+    border-right: none !important;
+}
+
+#menuContainer > .item {
+    padding: 15px;
+    color: white;
+    cursor: default;
+    border: 1px solid white;
+    display: inline-block !important;
+}
