@@ -11,17 +11,18 @@ import { UserService } from '../services/user.service';
 export class ConversationComponent implements OnInit {
 
   friendId: any;
-  friends:User[];
   friend:User;
 
   constructor(private activatedRoute: ActivatedRoute,
               private userServices: UserService) {
 
     this.friendId = activatedRoute.snapshot.params['uid'];
-    this.friends = userServices.getFriends();
-    this.friend = this.friends.find((record) => {
-      return record.uid == this.friendId;
-    });
+    this.userServices.getUserById(this.friendId).valueChanges()
+    .subscribe( (data: User) => {
+      this.friend = data;
+    }, (error) => {
+      console.log(error);
+    })
     console.log(this.friend);
 
    }
