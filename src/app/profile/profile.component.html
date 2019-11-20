@@ -3,33 +3,45 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="avatarFrameonline">
-                    <img src="assets/img/generic_avatar.png" class="avatarImage img-fluid" alt="">
+                    <img src="assets/img/generic_avatar.png" class="avatarImage img-fluid" alt=""
+                    [src]="croppedImage">
                 </div>
                 <hr>
                 <div>
                     <span>Cambiar Foto</span><br>
                     <label for="" class="custom-file-upload">
-                        <input type="file">
+                        <input (change)="fileChangeEvent($event)" type="file">
                         Subir  Avatar
                     </label>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9" *ngIf="user">
+                <image-cropper
+                    [imageChangedEvent]="imageChangedEvent"
+                    [maintainAspectRatio]="true"
+                    [aspectRatio]="1 / 1"
+                    [resizeToWidth]="128"
+                    format="png"
+                    (imageCropped)="imageCropped($event)"
+                    (imageLoaded)="imageLoaded()"
+                    (cropperReady)="cropperReady()"
+                    (loadImageFailed)="loadImageFailed()">
+                </image-cropper>
                 <div>
                     <label for="" fixed>Nick</label>
-                    <input type="text" class="form-control">
+                    <input [(ngModel)]="user.nick" type="text" class="form-control">
                 </div>
                 <div>
                     <label for="" fixed>Subnick</label>
-                    <input type="text" class="form-control">
+                    <input [(ngModel)]="user.subnick" type="text" class="form-control">
                 </div>
                 <div>
                     <label for="" fixed>Email</label>
-                    <input type="email" disabled class="form-control">
+                    <input [(ngModel)]="user.email" type="email" disabled class="form-control">
                 </div>
                 <div>
-                    <label for="" fixed>Nick</label>
-                    <select name="" class="form-control" id="">
+                    <label for="" fixed>Estado</label>
+                    <select [(ngModel)]="user.status" name="" class="form-control" id="">
                         <option value="online">Conectado</option>
                         <option value="away">Ausente</option>
                         <option value="busy">Ocupado</option>
@@ -37,7 +49,7 @@
                     </select>
                 </div>
                 <hr>
-                <a href="" class="btn btn-primary btn-block">Guardar</a>
+                <a (click)="saveSetting()" href="" class="btn btn-primary btn-block">Guardar</a>
             </div>
         </div>
     </div>
