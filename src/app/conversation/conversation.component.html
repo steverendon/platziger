@@ -1,1 +1,31 @@
-<p>{{friend | json}}</p>
+<div id="homeContainer">
+        <div id="profileContainer">
+                <div class="container pato45">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="avatarFrameonline">
+                                <img  class="avatarImage img-fluid">
+                            </div>
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                            <div class="avatarFrameonline">
+                                    <img  class="avatarImage img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <p class="h2">Amigo 1 <span class="h5">(online)</span></p>
+                            <hr>
+                            <div class="tablero">
+                                <div class="messageGroup" *ngFor="let m of conversation">
+                                    <b>{{ getUserNickById(m.sender) }}</b> dice: <br>
+                                    <span>{{m.text}}</span>
+                                </div>
+                            </div>
+                            <br>
+                            <textarea [(ngModel)]="textMessage" (keyup.enter)="sendMessage()" cols="30" rows="5" class="form-control"></textarea>
+                            <p>Enter para enviar</p>
+                            <!-- <a class="btn btn-primary btn-block">Enviar</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>

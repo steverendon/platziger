@@ -2,9 +2,9 @@
     <div class="container pato45">
         <div class="row">
             <div class="col-md-3">
-                <div class="avatarFrameonline">
-                    <img src="assets/img/generic_avatar.png" class="avatarImage img-fluid" alt=""
-                    [src]="croppedImage">
+                <div class="avatarFrameonline" *ngIf="user">
+                    <img  class="avatarImage img-fluid" alt="" [src]="croppedImage || user.avatar ||
+                    assets/img/generic_avatar.png ">
                 </div>
                 <hr>
                 <div>
@@ -49,7 +49,7 @@
                     </select>
                 </div>
                 <hr>
-                <a (click)="saveSetting()" href="" class="btn btn-primary btn-block">Guardar</a>
+                <a (click)="saveSetting()" class="btn btn-primary btn-block">Guardar</a>
             </div>
         </div>
     </div>

@@ -1,0 +1,11 @@
+#homeContainer{
+    background-image: url('/assets/img/msnbg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.tablero{
+    height: 300px;
+    width: 100%;
+    overflow: scroll;
+}
