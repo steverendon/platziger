@@ -1,4 +1,4 @@
-<div id="homeContainer">
+<div id="homeContainer" [ngClass]="{'shaker':shake}">
         <div id="profileContainer">
                 <div class="container pato45">
                     <div class="row">
@@ -22,6 +22,7 @@
                             </div>
                             <br>
                             <textarea [(ngModel)]="textMessage" (keyup.enter)="sendMessage()" cols="30" rows="5" class="form-control"></textarea>
+                            <p><a (click)="sendZumbido()">Enviar zumbido</a></p>
                             <p>Enter para enviar</p>
                             <!-- <a class="btn btn-primary btn-block">Enviar</a> -->
                         </div>
