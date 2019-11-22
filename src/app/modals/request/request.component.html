@@ -4,24 +4,27 @@
             Nueva solicitud
             <a (click)="close()" class="closeButton"></a>
         </div>
-        <div class="body" style="height: auto">
-        <div class="row">
-            <img src="assets/img/generic_avatar.png" class="image-fluid" alt="">
-        </div>
-        <div class="col-md">
-            <b>{{ currentRequest.sender }}</b>
-            <small>Te ha enviado una solicitud</small>
+        <div class="modal-body" style="height: auto">
+            <div class="row">
+                <div class="col-md-3">
+                        <img src="assets/img/generic_avatar.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-9">
+                        <b>{{ currentRequest.sender }}</b>
+                        <small>Te ha enviado una solicitud</small>
+                </div>
+            </div>
+            <br>
             <h4>Deseas agregar a esta persona?</h4>
             <hr>
             <input type="radio" name="addToMsn" [(ngModel)]="shouldAdd" value="yes" id="add-yes">
             <label for="add-yes">si quiero agregarlo</label><br>
     
             <input type="radio" name="addToMsn" [(ngModel)]="shouldAdd" value="no" id="add-no">
-            <label for="add-no">si quiero agregarlo</label><br>
+            <label for="add-no">no quiero agregarlo</label><br>
     
             <input type="radio" name="addToMsn" [(ngModel)]="shouldAdd" value="later" id="add-later">
-            <label for="add-later">si quiero agregarlo</label><br>
-        </div>
+            <label for="add-later">Decido despues</label><br>
        </div>
        <div class="modal-footer">
            <a class="btn btn-primary" (click)="accept()">Ok</a>

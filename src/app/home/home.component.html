@@ -29,13 +29,11 @@
         </div> 
         </div>
         <hr>
-        <b *ngIf="friends">Amigos ({{friends.length}} / {{friends.length}})</b>
-        <div *ngFor="let user of friends | search: query; let i = index" class="disblo marbo5">
-            <span routerLink="/conversation/{{user.uid}}">
-                <img src="assets/img/logo_live_online.png" class="icon" alt="">
-                <b>{{user.nick}}</b> - {{user.subnick || 'No subnick'}}
-                <small>{{user.email}}</small>
-            </span>
+        <b *ngIf="user && user.friends">Amigos ({{user.friends.length}} / {{user.friends.length}})</b>
+        <div *ngIf="user && user.friends">
+        <div class="disblo marbo5">
+            <app-contact class="col-md-12" *ngFor="let user of user.friends" [uid]="user" ></app-contact>
+        </div>
         </div>
     </div>
 </div>

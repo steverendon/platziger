@@ -7,4 +7,5 @@ export interface User {
     status?: string;
     avatar?: string;
     uid: any;
+    friends?: any;
 }

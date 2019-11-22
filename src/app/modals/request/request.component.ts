@@ -7,7 +7,6 @@ import { RequestsService } from 'src/app/services/requests.service';
 export interface PromptModel {
   scope: any;
   currentRequest: any;
-  shouldAdd: string;
 }
 @Component({
   selector: 'app-request',
